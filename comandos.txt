@@ -1,0 +1,41 @@
+CREATE TABLE IF NOT EXISTS public.imovel
+(
+    idmovel integer NOT NULL DEFAULT nextval('imovel_idmovel_seq'::regclass),
+    endereco_cep character varying(255) COLLATE pg_catalog."default",
+    login_usuario character varying(255) COLLATE pg_catalog."default",
+    numero integer,
+    complemento character varying(255) COLLATE pg_catalog."default",
+    tiponegociacao character varying(255) COLLATE pg_catalog."default",
+    statusimovel character varying(255) COLLATE pg_catalog."default",
+    descricao character varying(255) COLLATE pg_catalog."default",
+    tipoimovel character varying(255) COLLATE pg_catalog."default",
+    caracteristicas character varying(255) COLLATE pg_catalog."default",
+    preco double precision,
+    observacoes character varying(255) COLLATE pg_catalog."default",
+    CONSTRAINT imovel_pkey PRIMARY KEY (idmovel),
+    CONSTRAINT endereco_cep_fk FOREIGN KEY (endereco_cep)
+        REFERENCES public.endereco (cep) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION,
+    CONSTRAINT login_usuario_fk FOREIGN KEY (login_usuario)
+        REFERENCES public.login (usuario) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+)
+
+CREATE TABLE IF NOT EXISTS public.endereco
+(
+    cep character varying(255) COLLATE pg_catalog."default" NOT NULL,
+    rua character varying(255) COLLATE pg_catalog."default",
+    bairro character varying(255) COLLATE pg_catalog."default",
+    cidade character varying(255) COLLATE pg_catalog."default",
+    uf character varying(255) COLLATE pg_catalog."default",
+    CONSTRAINT endereco_pkey PRIMARY KEY (cep)
+)
+
+CREATE TABLE IF NOT EXISTS public.login
+(
+    usuario character varying(255) COLLATE pg_catalog."default" NOT NULL,
+    senha character varying(255) COLLATE pg_catalog."default",
+    CONSTRAINT login_pkey PRIMARY KEY (usuario)
+)

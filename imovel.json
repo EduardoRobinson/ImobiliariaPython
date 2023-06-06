@@ -1,0 +1,72 @@
+[
+            {
+                        "id": 4,
+                        "cep": "18273035",
+                        "login": "biro",
+                        "numero": 310,
+                        "complemento": "Casa",
+                        "tiponegociacao": "VENDA",
+                        "status": "DISPON\u00cdVEL",
+                        "descricao": "adasda",
+                        "tipoimovel": "TERRENO",
+                        "caracteristicas": "asdsada",
+                        "preco": 200000.0,
+                        "observacoes": "asdasdasdwasd"
+            },
+            {
+                        "id": 8,
+                        "cep": "18273035",
+                        "login": "biro",
+                        "numero": 310,
+                        "complemento": "Casa",
+                        "tiponegociacao": "VENDA",
+                        "status": "LOCADO",
+                        "descricao": "adasda",
+                        "tipoimovel": "TERRENO",
+                        "caracteristicas": "asdsada",
+                        "preco": 200000.0,
+                        "observacoes": "asdasdasdwasd"
+            },
+            {
+                        "id": 12,
+                        "cep": "18273035",
+                        "login": "biro",
+                        "numero": 310,
+                        "complemento": "Casa",
+                        "tiponegociacao": "VENDA",
+                        "status": "LOCADO",
+                        "descricao": "adasda",
+                        "tipoimovel": "TERRENO",
+                        "caracteristicas": "asdsada",
+                        "preco": 200000.0,
+                        "observacoes": "asdasdasdwasd"
+            },
+            {
+                        "id": 13,
+                        "cep": "18273035",
+                        "login": "biro",
+                        "numero": 310,
+                        "complemento": "Casa",
+                        "tiponegociacao": "VENDA",
+                        "status": "LOCADO",
+                        "descricao": "adasda",
+                        "tipoimovel": "TERRENO",
+                        "caracteristicas": "asdsada",
+                        "preco": 200000.0,
+                        "observacoes": "asdasdasdwasd"
+            },
+            {
+                        "id": 14,
+                        "cep": "18273035",
+                        "login": "biro",
+                        "numero": 310,
+                        "complemento": "Casa",
+                        "tiponegociacao": "VENDA",
+                        "status": "LOCADO",
+                        "descricao": "adasda",
+                        "tipoimovel": "TERRENO",
+                        "caracteristicas": "asdsada",
+                        "preco": 200000.0,
+                        "observacoes": "asdasdasdwasd"
+            }
+]
